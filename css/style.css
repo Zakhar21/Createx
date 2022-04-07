@@ -15,6 +15,15 @@ body{
     margin: 0 auto;
     height: 100%;
 }
+.main__about{
+    margin: 180px 0 160px 0;
+}
+.main__directions{
+    padding-bottom: 180px;
+}
+.main_cert{
+    margin-bottom: -46px;
+}
 .button{
     display: inline-block;
     letter-spacing: 0.5px;
@@ -233,7 +242,7 @@ body{
 }
 /* about___________________________________________________________ */
 .about{
-    margin: 180px 0 160px 0;
+    
 }
 .about__inner {
 }
@@ -332,8 +341,31 @@ body{
 
 /* directions __________________________________________________________________________ */
 .directions {
+    
 }
 .directions__inner {
+    position: relative;
+}
+.directions__inner::before{
+    content: '';
+    position: absolute;
+    top: 23px;
+    left: -185px;
+    background: url(../images/decor/2.svg);
+    width: 136px;
+    height: 115px;
+    display: block;
+}
+.directions__inner::after{
+    content: '';
+    position: absolute;
+    top: 400px;
+    right: -390px;
+    background: url(../images/decor/3.svg);
+    width: 243px;
+    height: 243px;
+    display: block;
+    opacity: .12;
 }
 .directions__heading {
     margin-bottom: 90px;
@@ -401,12 +433,13 @@ body{
     overflow: hidden;
     position: relative;
 }
-.directions__image-boximg{
+.directions__image-box img{
     position: absolute;
     top: 0;
     bottom: 0;
     left: 0;
     right: 0;
+    width: 100%;
 }
 
 .directions__link-content {
@@ -456,5 +489,77 @@ body{
 }
 
 /* directions__list-item ---mod------------start */
-
+.directions__list-item--marketing .directions__link-tag {
+    background-color: #03CEA4;
+}
+.directions__list-item--management .directions__link-tag {
+    background-color: #5A87FC;
+}
+.directions__list-item--hr .directions__link-tag {
+    background-color: #F89828;
+}
+.directions__list-item--design .directions__link-tag {
+    background-color: #F52F6E;
+}
+.directions__list-item--development .directions__link-tag {
+    background-color: #7772F1;
+}
 /* directions__list-item ---mod------------end */
+
+
+/* sertificat________________________________________________________________________ */
+
+.cert__inner {
+    display: flex;
+    /* justify-content: space-between; */
+    position: relative;
+}
+.cert__inner::after{
+    content: '';
+    position: absolute;
+    top: -35px;
+    left: -171px;
+    background: url(../images/decor/4.svg) 0 0 no-repeat;
+    width: 60px;
+    height: 60px;
+    display: block;
+}
+.cert__content {
+    margin-right: 30px;
+    max-width: 410px;
+}
+.cert__heading {
+    margin-bottom: 50px;
+}
+.cert__text {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 160%;
+    color: #424551;
+    margin-bottom: 30px;
+}
+.cert__logs {
+    display: flex;
+    align-items: center;
+    gap:40px;
+}
+.cert__logs-item {
+}
+.cert__image-box {
+    box-shadow: 0px 80px 80px -20px rgba(154, 156, 165, 0.16), 0px 30px 24px -10px rgba(154, 156, 165, 0.1), 0px 12px 10px -6px rgba(154, 156, 165, 0.08), 0px 4px 4px -4px rgba(30, 33, 44, 0.05);
+    border-radius: 4px;
+    overflow: hidden;
+    width: 705px;
+    height: 500px;
+    margin-left: auto;
+    position: relative;
+}
+.cert__image-box img{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    object-fit: cover;
+}
