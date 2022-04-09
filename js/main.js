@@ -41,13 +41,13 @@ $('.team__slider-next').on('click', function(e){
     $('.team__slider').slick('slickNext');
 });
 
-
+// слайдер c dots
 $('.testimonials__slider').slick({
     arrows: false,
-    dots: false,
+    dots: true,
     slidesToShow:1,
     infinity:true,
-    waitForAnimate:false,
+    appendDots:$('.testimonials__dots')
 });
 $('.testimonials__prev').on('click', function(e){
     e.preventDefault();
