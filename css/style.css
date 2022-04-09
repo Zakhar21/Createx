@@ -24,6 +24,9 @@ body{
 .main_cert{
     margin-bottom: -46px;
 }
+.main__testimonials{
+    padding-bottom:195px ;
+}
 .button{
     display: inline-block;
     letter-spacing: 0.5px;
@@ -562,4 +565,219 @@ body{
     right: 0;
     width: 100%;
     object-fit: cover;
+}
+
+/* team___________________________________________________________ */
+.main__team {
+    padding: 160px 0 180px;
+}
+.team {
+    background: url(../images/decor/team-bg.svg) 210px 30px no-repeat, #F4F5F6;
+}
+.team__inner {
+}
+.team__heading {
+    margin-bottom: 60px;
+    position: relative;
+}
+
+.team__slider .slick-list{
+    margin: 0 -15px;
+}
+.team__slide {
+    padding: 0 15px;
+}
+.team__slide:hover .team__socials{
+    transform: translateY(0);
+}
+.team__image-box {
+    border-radius: 4px;
+    margin-bottom: 16px;
+    position: relative;
+    overflow: hidden;
+}
+.team__image {
+    position: relative;
+    height: 340px;
+    overflow: hidden;
+}
+.team__image img{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+}
+.team__socials {
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+    gap:12px;
+    padding: 20px;
+    position: absolute;
+    bottom: 0;
+    top:50%;
+    left: 0;
+    right: 0;
+    background: linear-gradient(180deg, rgba(30, 33, 44, 0) 43.9%, rgba(30, 33, 44, 0.03) 55.21%, rgba(30, 33, 44, 0.33) 68.73%, rgba(30, 33, 44, 0.56) 76.17%, rgba(30, 33, 44, 0.768225) 83.75%, rgba(30, 33, 44, 0.92) 91.49%, #1E212C 100%);
+    transform: translateY(50%);
+    transition: transform .3s ease;
+}
+.team__socials-item {
+}
+.team__socials-link {
+    display: block;
+    line-height: 0;
+    
+}
+.team__socials-link path {
+    transition: .3s;
+}
+.team__socials-link:hover path {
+    fill: #fff;
+}
+.team__info {
+    text-align: center;
+}
+.team__info-name {
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 150%;
+    margin-bottom: 5px;
+}
+.team__info-position {
+    color: #787A80;
+}
+
+.team__slider-arrows{
+    position: absolute;
+    bottom:0;
+    right: 0;
+}
+.team__slider-arrows{
+    display: flex;
+    gap:10px;
+}
+.team__slider-arrow {
+    background-color: transparent;
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    display: inline-block;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: .3 ;
+}
+.team__slider-arrow:hover {
+    background-color: #FF3F3A;
+}
+.team__slider-arrow path{
+    transition:  .3s;
+}
+.team__slider-arrow:hover path {
+    fill:#fff;
+}
+.team__slider-prev {
+    margin-right: 24px;
+}
+.team__slider-next {
+}
+
+/* testimonials___________________________________________________________ */
+.testimonials {
+    background:#F4F5F6;
+}
+.testimonials__inner {
+}
+.testimonials__heading {
+    text-align: center;
+    margin-bottom: 60px;
+}
+.testimonials__slider-wrapper {
+    padding: 0 50px;
+    position: relative;
+}
+.testimonials__slider {
+    max-width: 1020px;
+    margin: 0 auto;
+}
+.testimonials__slide {
+    padding: 64px;
+    background-color: #fff;
+    box-shadow: 0px 80px 80px -20px rgba(154, 156, 165, 0.08), 0px 30px 24px -10px rgba(154, 156, 165, 0.05), 0px 12px 10px -6px rgba(154, 156, 165, 0.04), 0px 4px 4px -4px rgba(30, 33, 44, 0.03);
+    border-radius: 4px;
+}
+.testimonials__slide-inner {
+    max-width: 810px;
+    margin: 0 auto;
+    padding-left: 58px;
+}
+.testimonials__quote {
+    font-size: 20px;
+    line-height: 150%;
+    margin-bottom: 24px;
+    position: relative;
+}
+.testimonials__quote::before{
+    content: '';
+    position: absolute;
+    top:0;
+    left: -58px;
+    background: url('../images/icons/quote-icon.svg') 0 0/ 100% no-repeat;
+    width: 28px;
+    height: 20px;
+}
+.testimonials__user {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.testimonials__avatar {
+    border-radius: 50%;
+    width: 72px;
+    height: 72px;
+    overflow: hidden;
+}
+.testimonials__info {
+}
+.testimonials__info-name {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 160%;
+    margin-bottom: 4px;
+    color: #1E212C;
+}
+.testimonials__info-position {
+}
+
+.testimonials__arrow {
+    background-color: transparent;
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    display: inline-block;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: .3 ;
+    position: absolute;
+    top:50%;
+    transform: translateY(-50%);
+}
+.testimonials__arrow:hover {
+    background-color: #FF3F3A;
+}
+.testimonials__arrow path{
+    transition:  .3s;
+}
+.testimonials__arrow:hover path {
+    fill:#fff;
+}
+.testimonials__prev {
+    left: 0;
+}
+.testimonials__next {
+    right: 0;
 }
