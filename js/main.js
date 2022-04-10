@@ -59,7 +59,7 @@ $('.testimonials__next').on('click', function(e){
 });
 
 
-// accordeon
+// accordeon 
 // $('.program__acc-link').on('click', function(e){
 //     e.preventDefault();
 //     $(this).toggleClass('program__acc-link--active');

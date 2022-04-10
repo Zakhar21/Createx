@@ -33,6 +33,9 @@ body{
 .main__program {
     padding: 115px 0 185px;
 }
+.main__blog {
+    padding-bottom: 200px;
+}
 .button{
     display: inline-block;
     letter-spacing: 0.5px;
@@ -930,4 +933,53 @@ body{
     transform: rotate(0deg);
 }
 .program__image {
+    
+}
+
+/* ==================================================Blog================================================== */
+/* ==================================================Blog================================================== */
+.blog {
+}
+.blog__inner {
+}
+.blog__top {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin-bottom: 60px;
+}
+.blog__heading {
+    margin-right: 30px;
+}
+.blog__btn {
+    font-size: 16px;
+}
+.button {
+}
+.blog__row {
+    display: flex;
+}
+.blog__item {
+}
+.blog__item-link {
+}
+.blog__item-inner {
+}
+.blog__image-box {
+}
+.blog__item-content {
+}
+.blog__item-info {
+}
+.blog__info-dir {
+}
+.blog__info-date {
+}
+.blog__info-time {
+}
+.blog__item-title {
+}
+.blog__item-text {
+}
+.blog__item-btn {
 }
