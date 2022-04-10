@@ -13,7 +13,7 @@
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
-<body>
+<body id="body">
     
     <div class="wrapper">
         <header class="header">
@@ -27,19 +27,19 @@
                         <nav class="header__nav">
                             <ul class="header__nav-list">
                                 <li class="header__nav-item">
-                                    <a class="header__nav-link" href="#">О нас</a>
+                                    <a class="header__nav-link"  href="#about">О нас</a>
                                 </li>
                                 <li class="header__nav-item">
-                                    <a class="header__nav-link" href="#">Курсы</a>
+                                    <a class="header__nav-link" href="#directions">Курсы</a>
                                 </li>
                                 <li class="header__nav-item">
                                     <a class="header__nav-link" href="#">События</a>
                                 </li>
                                 <li class="header__nav-item">
-                                    <a class="header__nav-link" href="#">Блог</a>
+                                    <a class="header__nav-link" href="#blog">Блог</a>
                                 </li>
                                 <li class="header__nav-item">
-                                    <a class="header__nav-link" href="#">Контакты</a>
+                                    <a class="header__nav-link" href="#contact">Контакты</a>
                                 </li>
                             </ul>
                         </nav>
@@ -113,7 +113,7 @@
             </div>
         </header>
         <main class="main">
-            <section class="main__about about">
+            <section class="main__about about" id="about">
                 <div class="container">
                     <div class="about__inner">
                         <div class="about__createx">
@@ -171,7 +171,7 @@
                 </div>
             </section>
 
-            <section class="main__directions directions">
+            <section class="main__directions directions" id="directions">
                 <div class="container">
                     <div class="directions__inner">
                         <div class="directions__heading heading">
@@ -985,7 +985,7 @@
                 </div>
             </section>
 
-            <section class="main__blog blog">
+            <section class="main__blog blog" id="blog">
                 <div class="container">
                     <div class="blog__inner">
                         <div class="blog__top">
@@ -1083,7 +1083,7 @@
                 </div>
             </section>
 
-            <section class="main__info info">
+            <section class="main__info info" id="contact">
                 <div class="container">
                     <div class="info__inner">
                         <div class="info__content">
@@ -1370,7 +1370,10 @@
                             <div class="footer__top-col">
                                 <h3 class="footer__top-title">Подписаться на рассылку</h3>
                                 <form class="footer__form">
-                                    <input class="footer__form-input" type="email" placeholder="Ваш email:">
+                                    <div class="footer__form-items">
+                                        <input class="footer__form-input" type="email" placeholder="Ваш email:" required>
+                                    <button class="footer__form-btn" type="submit"></button>
+                                    </div>
                                     <div class="form__descr">
                                         ** Подпишитесь на нашу рассылку новостей, чтобы получать сообщения и ранние обновления от Create SEO Agency.
                                     </div>
@@ -1386,7 +1389,7 @@
                             <div class="footer__copy">
                                 © All rights reserved. Made with <span></span> by Createx Studio 
                             </div>
-                            <a href="#" class="footer__go-top">Вверх</a>
+                            <a href="#body" class="footer__go-top">Вверх</a>
                         </div>
                     </div>
                 </div>

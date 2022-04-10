@@ -86,3 +86,13 @@ $('.program__acc-link').on('click', function(e){
 
 });
 
+
+// Плавный скролл
+$(".header__nav-list a, .footer__go-top ").on("click", function (event) {
+
+    event.preventDefault();
+    var id  = $(this).attr('href'),
+        top = $(id).offset().top - 150;
+    $('body,html').animate({scrollTop: top}, 1000);
+});
+    
