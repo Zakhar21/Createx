@@ -57,3 +57,32 @@ $('.testimonials__next').on('click', function(e){
     e.preventDefault();
     $('.testimonials__slider').slick('slickNext');
 });
+
+
+// accordeon
+// $('.program__acc-link').on('click', function(e){
+//     e.preventDefault();
+//     $(this).toggleClass('program__acc-link--active');
+//     $(this).children('.program__acc-text').slideToggle();
+// });
+
+$('.program__acc-link').on('click', function(e){
+    e.preventDefault();
+    // $('.program__acc-link').removeClass('program__acc-link--active');
+    // $('.program__acc-text').slideUp();
+    // $(this).toggleClass('program__acc-link--active');
+    // $(this).children('.program__acc-text').slideDown();
+
+    if($(this).hasClass('program__acc-link--active')){
+        $(this).removeClass('program__acc-link--active');
+        $(this).children('.program__acc-text').slideUp();
+    }else{
+        $('.program__acc-link').removeClass('program__acc-link--active');
+        $('.program__acc-text').slideUp();
+        $(this).addClass('program__acc-link--active');
+        $(this).children('.program__acc-text').slideDown();
+    }
+
+
+});
+
