@@ -30,6 +30,9 @@ body{
 .main__companies {
     padding-bottom: 177px;
 }
+.main__program {
+    padding: 115px 0 185px;
+}
 .button{
     display: inline-block;
     letter-spacing: 0.5px;
@@ -853,4 +856,51 @@ body{
 .companies__grid-link:hover img {
     opacity: 1;
     filter: grayscale(0);
+}
+/* ==================================================Accordeon================================================== */
+/* ==================================================Accordeon================================================== */
+.program {
+}
+.program__inner {
+    display: flex;
+    justify-content: space-between;
+}
+.program__content {
+    margin-right: 30px;
+    max-width: 600px;
+}
+.program__heading {
+    margin-bottom: 60px;
+}
+.program__acc {
+}
+.program__acc-item {
+    padding-left: 40px;
+
+}
+.program__acc-item:not(:last-child) {
+    margin-bottom: 24px;
+}
+.program__acc-head {
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 150%;
+    color: #1E212C;
+    display: flex;
+    align-items: flex-start;
+}
+.program__acc-head span {
+    color:#FF3F3A;
+    font-weight: 400;
+    margin-right: 8px;
+    white-space: nowrap;
+}
+.program__acc-text {
+    margin-top: 16px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 160%;
+    color: #424551;
+}
+.program__image {
 }
