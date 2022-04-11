@@ -95,4 +95,23 @@ $(".header__nav-list a, .footer__go-top ").on("click", function (event) {
         top = $(id).offset().top - 150;
     $('body,html').animate({scrollTop: top}, 1000);
 });
+
+
+// burger
+
+$('.burger').on('click', function (e) {
+    e.preventDefault();
+    $('.header__top').toggleClass('header__top--open');
+})
+// проверять всегда
+setInterval(() => {
+    if($(window).scrollTop() > 0 && $('.header__top').hasClass('header__top--open') === false){
+        $('.burger').addClass('burger--follow');
+    }else{
+        $('.burger').removeClass('burger--follow');
+    }
+}, 0);
+// проверять при скролле
+$(window).on('scroll', function() {
     
+})
