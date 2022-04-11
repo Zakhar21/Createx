@@ -99,9 +99,10 @@ $(".header__nav-list a, .footer__go-top ").on("click", function (event) {
 
 // burger
 
-$('.burger').on('click', function (e) {
+$('.burger, .overlay').on('click', function (e) {
     e.preventDefault();
     $('.header__top').toggleClass('header__top--open');
+    $('.overlay').toggleClass('overlay-show');
 })
 // проверять всегда
 setInterval(() => {
@@ -114,4 +115,5 @@ setInterval(() => {
 // проверять при скролле
 $(window).on('scroll', function() {
     
-})
+});
+

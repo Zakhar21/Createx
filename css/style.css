@@ -16,6 +16,22 @@ body{
     margin: 0 auto;
     height: 100%;
 }
+.overlay{
+    position: fixed;
+    top:0;
+    left: 0;
+    right:0;
+    bottom: 0;
+    background-color: #1E212C;
+    opacity: 0;
+    z-index: 10;
+    visibility: hidden;
+    transition: all .3s;
+}
+.overlay-show{
+    opacity: .6;
+    visibility: visible;
+}
 .main__about{
     margin: 180px 0 160px 0;
 }
@@ -1543,6 +1559,7 @@ body{
     }
     .header__nav{
         margin: 0 auto;
+        flex-grow: 1;
     }
     .header__nav-list{
         flex-direction: column;
