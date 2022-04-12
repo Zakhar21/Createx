@@ -30,6 +30,39 @@ $('.team__slider').slick({
     infinity:true,
     appendArrows: $('.team__slider-arrows'),
     waitForAnimate:false,
+    responsive: 
+    [
+        {
+            breakpoint: 1100,
+            settings:{
+                slidesToShow:3,
+            },
+        },
+        {
+            breakpoint: 850,
+            settings:{
+                slidesToShow:2.5,
+            },
+        },
+        {
+            breakpoint: 680,
+            settings:{
+                slidesToShow:2,
+            },
+        },
+        {
+            breakpoint: 680,
+            settings:{
+                slidesToShow:1.5,
+            },
+        },
+        {
+            breakpoint: 480,
+            settings:{
+                slidesToShow:1,
+            },
+        },
+    ],
 });
 
 $('.team__slider-prev').on('click', function(e){

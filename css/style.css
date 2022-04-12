@@ -631,6 +631,7 @@ body{
     top: 0;
     left: 0;
     object-fit: cover;
+    object-position: top;
 }
 .team__socials {
     display: flex;
@@ -1670,6 +1671,9 @@ body{
     .directions__link-content{
         padding: 15px;
     }
+    .cert__heading .heading__title{
+        max-width: 500px;
+    }
 }
 @media screen and (max-width:890px){
     .header__play{
@@ -1739,6 +1743,10 @@ body{
     }
     .cert__heading{
         margin-bottom: 25px;
+    }
+    .team__slider-arrows{
+        bottom: -548px;
+        left: 0;
     }
 }
 @media screen and (max-width:390px){
