@@ -1636,6 +1636,17 @@ body{
     .about__createx{
         margin-bottom: 100px;
     }
+    .directions__filter-box{
+        justify-content: space-between;
+        gap: 10px;
+        margin-bottom: 30px;
+    }
+    .directions__list{
+        gap: 30px 10px;
+    }
+    .directions__link-content{
+        padding: 15px;
+    }
 }
 @media screen and (max-width:890px){
     .header__play{
@@ -1644,6 +1655,9 @@ body{
     .header__title {
         font-size: 40px;
         margin-bottom: 40px;
+    }
+    .main__directions {
+        padding-bottom: 80px;
     }
 
 }
@@ -1657,6 +1671,14 @@ body{
     .header__main{
         margin-top: 80px;
         margin-bottom: 80px;
+    }
+    .directions__filter-box{
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: flex-start;
+    }
+    .directions__list{
+        grid-template: repeat(3, auto) / repeat(2, 1fr);
     }
 }
 @media screen and (max-height:580px){
@@ -1673,6 +1695,18 @@ body{
     }
     .about__content-buttons{
         flex-direction: column;
+    }
+    .directions__list{
+        grid-template: none;
+    }
+    .directions__image-box{
+        width: 100%;
+    }
+    .directions__list {
+        gap: 15px 10px;
+    }
+    .directions__list-item--empty{
+        padding: 79px 0;
     }
 }
 @media screen and (max-width:390px){
