@@ -1639,6 +1639,9 @@ body{
     .main__about {
         margin: 80px 0 80px 0;
     }
+    .main__testimonials {
+        padding-bottom: 80px;
+    }
     .about__createx-content{
         display: flex;
         flex-direction: column;
@@ -1654,8 +1657,12 @@ body{
         margin-bottom: 40px;
         margin-right: 0px;
     }
+    .about__image-box img{
+        width: 100%;
+        height: 100%;
+    }
     .about__numbers{
-        align-self: flex-start;
+        display: none;
     }
     .about__createx{
         margin-bottom: 100px;
@@ -1707,6 +1714,18 @@ body{
     .directions__list{
         grid-template: repeat(3, auto) / repeat(2, 1fr);
     }
+    .main__team{
+        padding: 100px 0 80px;
+    }
+    .testimonials__slider-wrapper{
+        padding: 0;
+    }
+    .testimonials__arrow{
+        display: none;
+    }
+    .testimonials__slide{
+        padding: 21px;
+    }
 }
 @media screen and (max-height:580px){
     .header__top{
@@ -1745,8 +1764,20 @@ body{
         margin-bottom: 25px;
     }
     .team__slider-arrows{
-        bottom: -548px;
-        left: 0;
+        display: none;
+    }
+    .cert__logs {
+        gap: 25px;
+    }
+    .testimonials__slide-inner{
+        width: 100%;
+        padding-left: 40px;
+    }
+    .testimonials__quote::before{
+        left: -40px;
+    }
+    .testimonials__quote{
+        font-size: 16px;
     }
 }
 @media screen and (max-width:390px){
@@ -1770,6 +1801,7 @@ body{
     }
     .cert__image-box {
         height: 240px;
+        box-shadow:initial;
     }
     .cert__logs{
         flex-wrap: wrap;
@@ -1783,4 +1815,15 @@ body{
         margin-bottom: 0;
     }
 
+}
+@media screen and (max-width:320px){
+    .testimonials__quote{
+        font-size: 13px;
+    }
+    .testimonials__info-name{
+        font-size: 13px;
+    }
+    .testimonials__user{
+        font-size: 10px;
+    }
 }

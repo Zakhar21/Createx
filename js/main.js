@@ -80,7 +80,16 @@ $('.testimonials__slider').slick({
     dots: true,
     slidesToShow:1,
     infinity:true,
-    appendDots:$('.testimonials__dots')
+    appendDots:$('.testimonials__dots'),
+    responsive: 
+    [
+        {
+            breakpoint: 700,
+            settings:{
+                
+            },
+        },
+    ],
 });
 $('.testimonials__prev').on('click', function(e){
     e.preventDefault();
